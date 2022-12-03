@@ -26,12 +26,17 @@
         .box input {
             width: 100px;
             height: 50px;
+
+            <!-- 인라인처럼 수평배치가 되고 길이조절도 가능한것-->>
             display: inline-block;
         }
         .box input:nth-child(3) {
             /* display: none; */
 
-            /* 투명도 설정: 0% - 0에 가까울수록 투명 최대값 1 */
+            /* 투명도 설정: 0% - 0에 가까울수록 투명 최대값 1 
+             0 으로 처리하면 자리는 차지하나 안보이게 설정됨
+             ex) 댓글창 접기- none
+             숨기기 - oparcity*/
             opacity: 0;
         }
 

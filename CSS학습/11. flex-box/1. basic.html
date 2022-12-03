@@ -7,13 +7,13 @@
     <title>Document</title>
     <style>
         section {
-            display: flex;
+            display: flex; /*섹션입장에서는 컨테이너가 아이템임*/
         }
         .container {
             width: fit-content;
             border: 2px solid red;
             padding: 20px;
-            display: flex;
+            display: flex; /*부모한테 이거 걸면 자식들 수평배치됨*/
         }
         .item {
             width: 100px;
@@ -26,9 +26,9 @@
     
     <section>
         <div class="container">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item">이미지</div>
+            <div class="item">텍스트</div>
+            <!-- <div class="item"></div> -->
         </div>
         <div class="container">
             <div class="item"></div>
